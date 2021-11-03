@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AdminlteConfig(AppConfig):
+class FrontadminConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'adminlte'
+    name = 'frontadmin'
