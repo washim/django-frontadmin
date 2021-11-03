@@ -15,12 +15,6 @@ def logo(defaut=True):
         'default': defaut
     }
 
-@register.inclusion_tag('elements/navbar.html')
-def navbar(navdata=False):
-    return {
-        'nav_data': json.loads(navdata) if navdata else []
-    }
-
 @register.inclusion_tag('elements/sidebar.html')
 def sidebar():
     pass
