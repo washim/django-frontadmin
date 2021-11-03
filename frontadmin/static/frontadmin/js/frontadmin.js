@@ -1,8 +1,3 @@
-/*!
- * AdminLTE v3.2.0-rc (https://adminlte.io)
- * Copyright 2014-2021 Colorlib <https://colorlib.com>
- * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
- */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery'], factory) :
@@ -13,12 +8,6 @@
 
   var $__default = /*#__PURE__*/_interopDefaultLegacy($);
 
-  /**
-   * --------------------------------------------
-   * AdminLTE CardRefresh.js
-   * License MIT
-   * --------------------------------------------
-   */
   /**
    * Constants
    * ====================================================
@@ -3046,4 +3035,3 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=adminlte.js.map
