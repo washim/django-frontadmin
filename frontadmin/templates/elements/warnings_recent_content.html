@@ -9,7 +9,7 @@
             {% for row in log_entries %}
             <div class="dropdown-divider"></div>
             <a href="#" class="dropdown-item" style="font-size: 14px;">
-                <i class="fas fa-envelope mr-2"></i> {{ row }} by {{ row.user }}
+                <i class="mr-2 fas {% if row.action_flag == 1 %}fa-plus-square{% elif row.action_flag == 2 %}fa-edit{% else %}fa-trash{% endif %}"></i> {{ row.object_repr }} by {{ row.user }}
                 <span class="float-right text-muted text-sm">{{ row.action_time|naturaltime }}</span>
             </a>
             {% empty %}

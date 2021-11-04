@@ -25,3 +25,9 @@ def warnings_recent_content():
     return {
         'log_entries': entries
     }
+
+@register.inclusion_tag('elements/form.html')
+def simple_form(form):
+    return {
+        'form': form
+    }
