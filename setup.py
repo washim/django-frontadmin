@@ -8,7 +8,7 @@ with open("README.rst", "r") as fh:
 
 setup(
     name='django-frontadmin',
-    version='1.0.4',
+    version='1.0.9',
     author='Washim Ahmed',
     author_email='washim.ahmed@gmail.com',
     packages=find_packages(),

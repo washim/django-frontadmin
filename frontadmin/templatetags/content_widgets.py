@@ -1,6 +1,6 @@
 from django import template
 from django.conf import settings
-import json
+from django.contrib.admin.models import LogEntry
 
 register = template.Library()
 
@@ -18,3 +18,10 @@ def logo(defaut=True):
 @register.inclusion_tag('elements/sidebar.html')
 def sidebar():
     pass
+
+@register.inclusion_tag('elements/warnings_recent_content.html')
+def warnings_recent_content():
+    entries = LogEntry.objects.all().order_by('-id')[:10]
+    return {
+        'log_entries': entries
+    }
