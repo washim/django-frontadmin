@@ -27,10 +27,7 @@ def warnings_recent_content():
     }
 
 @register.inclusion_tag('elements/form.html')
-def simple_form(form, form_title, form_submit, form_class):
+def simple_form(frontadmin_form):
     return {
-        'form': form,
-        'form_title': form_title,
-        'form_submit': form_submit,
-        'form_class': form_class
+        'frontadmin_form': frontadmin_form
     }
