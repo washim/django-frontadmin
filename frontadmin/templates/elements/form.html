@@ -11,7 +11,7 @@
                     {{ field.label_tag }} 
                     {{ field }}
                     {% if field.help_text %}
-                    <span class="valid-feedback">{{ field.help_text|safe }}</span>
+                    <span class="badge bg-secondary mb-2">{{ field.help_text|safe }}</span>
                     {% endif %}
                     {{ field.errors }}
                 </div>
