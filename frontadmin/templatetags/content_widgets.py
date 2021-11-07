@@ -25,9 +25,3 @@ def warnings_recent_content():
     return {
         'log_entries': entries
     }
-
-@register.inclusion_tag('elements/form.html')
-def simple_form(frontadmin_form):
-    return {
-        'frontadmin_form': frontadmin_form
-    }
