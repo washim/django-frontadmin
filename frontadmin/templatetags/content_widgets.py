@@ -1,5 +1,6 @@
 from django import template
 from django.conf import settings
+from django.forms.models import model_to_dict
 from django.contrib.admin.models import LogEntry
 
 register = template.Library()
@@ -25,3 +26,8 @@ def warnings_recent_content():
     return {
         'log_entries': entries
     }
+
+@register.filter
+def convert_to_dict(queryset):
+    mydict = model_to_dict(queryset)
+    return mydict.items()
